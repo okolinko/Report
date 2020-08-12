@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Reports::report">
+                    <resource id="Toppik_Report::toppik" title="Toppik" translate="title">
+                        <resource id="Toppik_Report::toppik_report" title="Toppik Report" translate="title" />
+                        <resource id="Toppik_Report::system_integrations" title="System Integrations" translate="title" />
+                        <resource id="Toppik_Report::system_integrations_entity_types" title="System Integrations Entity Types" translate="title" />
+                    </resource>
+                    
+                    <resource id="Toppik_Report::subscription_reports" title="Subscription Reports" translate="title">
+                        <resource id="Toppik_Report::subscription_report_save" title="Subscription Save Report" translate="title" />
+                        <resource id="Toppik_Report::subscription_report_save_summary" title="Subscription Save Summary Report" translate="title" />
+                        <resource id="Toppik_Report::subscription_report_save_full" title="Subscription Save Full Report" translate="title" />
+                        <resource id="Toppik_Report::subscription_report_save_summary_full" title="Subscription Save Summary Full Report" translate="title" />
+                        <resource id="Toppik_Report::subscription_report_daily" title="Daily Report" translate="title" />
+                        <resource id="Toppik_Report::subscription_report_monthly" title="Monthly Report" translate="title" />
+                        <resource id="Toppik_Report::subscription_report_average" title="Average Report" translate="title" />
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

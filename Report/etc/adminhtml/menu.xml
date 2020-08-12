@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Toppik_Report::toppik" title="Toppik" translate="title" module="Toppik_Report" sortOrder="100" parent="Magento_Reports::report" resource="Toppik_Report::toppik"/>
+        
+        <add id="Toppik_Report::toppik_report" title="Toppik Report" translate="title" module="Toppik_Report" sortOrder="50" parent="Toppik_Report::toppik" action="toppikreport/index" resource="Toppik_Report::toppik"/>
+        <add id="Toppik_Report::toppik_system_integrations" title="System Integrations" translate="title" module="Toppik_Report" sortOrder="60" parent="Toppik_Report::toppik" action="toppikreport/system/integrations" resource="Toppik_Report::system_integrations"/>
+        <add id="Toppik_Report::toppik_sales_report" title="Daily Sales Report" translate="title" module="Toppik_Report" sortOrder="70" parent="Toppik_Report::toppik" action="toppikreport/sales/daily" resource="Toppik_Report::toppik"/>
+        
+        <add id="Toppik_Report::subscription" title="Subscriptions" translate="title" module="Toppik_Report" sortOrder="1100" parent="Magento_Reports::report" resource="Toppik_Report::subscription_reports"/>
+        
+        <add id="Toppik_Report::subscription_save" title="Save Report" translate="title" module="Toppik_Report" sortOrder="10" parent="Toppik_Report::subscription" action="toppikreport/subscription/save" resource="Toppik_Report::subscription_report_save"/>
+        <add id="Toppik_Report::subscription_save_summary" title="Save Summary Report" translate="title" module="Toppik_Report" sortOrder="20" parent="Toppik_Report::subscription" action="toppikreport/subscription/save_summary" resource="Toppik_Report::subscription_report_save_summary"/>
+        <add id="Toppik_Report::subscription_report" title="Subscription Report" translate="title" module="Toppik_Report" sortOrder="30" parent="Toppik_Report::subscription" action="toppikreport/subscription" resource="Toppik_Report::subscription_reports"/>
+        <add id="Toppik_Report::subscription_daily_report" title="Daily Report" translate="title" module="Toppik_Report" sortOrder="40" parent="Toppik_Report::subscription" action="toppikreport/subscription/daily" resource="Toppik_Report::subscription_report_daily"/>
+        <add id="Toppik_Report::subscription_monthly_report" title="Monthly Report" translate="title" module="Toppik_Report" sortOrder="50" parent="Toppik_Report::subscription" action="toppikreport/subscription/monthly" resource="Toppik_Report::subscription_report_monthly"/>
+        <add id="Toppik_Report::subscription_monthly_sum_report" title="Monthly SUM Report" translate="title" module="Toppik_Report" sortOrder="60" parent="Toppik_Report::subscription" action="toppikreport/subscription/monthly_sum" resource="Toppik_Report::subscription_report_monthly"/>
+        <add id="Toppik_Report::subscription_average_report" title="Average Report" translate="title" module="Toppik_Report" sortOrder="70" parent="Toppik_Report::subscription" action="toppikreport/subscription/average" resource="Toppik_Report::subscription_report_average"/>
+        <add id="Toppik_Report::subscription_average_sku_report" title="Average SKU Report" translate="title" module="Toppik_Report" sortOrder="80" parent="Toppik_Report::subscription" action="toppikreport/subscription/average_sku" resource="Toppik_Report::subscription_report_average"/>
+        <add id="Toppik_Report::subscription_future_report" title="Future Report" translate="title" module="Toppik_Report" sortOrder="90" parent="Toppik_Report::subscription" action="toppikreport/subscription/future" resource="Toppik_Report::subscription_reports"/>
+        <add id="Toppik_Report::subscription_pivot_report" title="Pivot Report" translate="title" module="Toppik_Report" sortOrder="100" parent="Toppik_Report::subscription" action="toppikreport/subscription/pivot" resource="Toppik_Report::subscription_reports"/>
+        <add id="Toppik_Report::subscription_lifetime_report" title="Subscription Lifetime Report" translate="title" module="Toppik_Report" sortOrder="110" parent="Toppik_Report::toppik" action="toppikreport/subscription/lifetime" resource="Toppik_Report::subscription_reports"/>
+        
+        <add id="Toppik_Report::system_integrations_entity_types" title="System Integrations Entity Types" translate="title" module="Toppik_Report" sortOrder="90" parent="Magento_Backend::other_settings" action="toppikreport/system/integrations_entity_types" resource="Toppik_Report::system_integrations_entity_types"/>
+    </menu>
+</config>

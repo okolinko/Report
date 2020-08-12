@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="index">
+        <job name="toppikreport_daily_system" instance="Toppik\Report\Cron\DailySystem" method="execute">
+            <schedule>0 0 * * *</schedule>
+        </job>
+        <job name="toppikreport_daily_sales" instance="Toppik\Report\Cron\DailySales" method="execute">
+            <schedule>12 0 * * *</schedule>
+        </job>
+        <job name="toppikreport_refresh" instance="Toppik\Report\Cron\Refresh" method="execute">
+            <schedule>0 0 * * *</schedule>
+        </job>
+    </group>
+</config>

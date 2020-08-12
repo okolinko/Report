@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="toppikreport_daily_system">
+        <observer name="toppikreport_daily_system" instance="Toppik\Report\Observer\DailySystem"/>
+    </event>
+	
+    <event name="toppikreport_system_add_message">
+        <observer name="toppikreport_system_add_message" instance="Toppik\Report\Observer\SystemAddMessage"/>
+    </event>
+
+    <event name="toppikreport_daily_sales_regular_customers">
+        <observer name="toppikreport_daily_sales_regular_customers" instance="Toppik\Report\Observer\DailySalesRegularCustomers"/>
+    </event>
+
+    <event name="toppikreport_daily_sales_pro_orders">
+        <observer name="toppikreport_daily_sales_pro_orders" instance="Toppik\Report\Observer\DailySalesProOrders"/>
+    </event>
+
+</config>

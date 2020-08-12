@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Toppik\Report\Model\ResourceModel\Report\Subscription\Future\Detail\Grid\Collection">
+		<plugin
+			name="toppikreport_subscription_future_detail_grid_collection"
+			type="Toppik\Report\Plugin\ResourceModel\Subscription\Future\Detail\Grid\Collection"
+			sortOrder="100"
+			disabled="false"/>
+	</type>
+    
+	<type name="Toppik\Report\Model\ResourceModel\Report\Subscription\Average\Detail\Grid\Collection">
+		<plugin
+			name="toppikreport_subscription_average_detail_grid_collection"
+			type="Toppik\Report\Plugin\ResourceModel\Subscription\Average\Detail\Grid\Collection"
+			sortOrder="100"
+			disabled="false"/>
+	</type>
+    
+	<type name="Toppik\Report\Model\ResourceModel\Report\Subscription\Daily\Detail\Grid\Collection">
+		<plugin
+			name="toppikreport_subscription_daily_detail_grid_collection"
+			type="Toppik\Report\Plugin\ResourceModel\Subscription\Daily\Detail\Grid\Collection"
+			sortOrder="100"
+			disabled="false"/>
+	</type>
+    
+	<type name="Toppik\Report\Model\ResourceModel\Report\Subscription\Monthly\Detail\Grid\Collection">
+		<plugin
+			name="toppikreport_subscription_monthly_detail_grid_collection"
+			type="Toppik\Report\Plugin\ResourceModel\Subscription\Monthly\Detail\Grid\Collection"
+			sortOrder="100"
+			disabled="false"/>
+	</type>
+    
+	<type name="Toppik\Report\Model\ResourceModel\Report\Subscription\Index\Detail\Grid\Collection">
+		<plugin
+			name="toppikreport_subscription_index_detail_grid_collection"
+			type="Toppik\Report\Plugin\ResourceModel\Subscription\Index\Detail\Grid\Collection"
+			sortOrder="100"
+			disabled="false"/>
+	</type>
+</config>

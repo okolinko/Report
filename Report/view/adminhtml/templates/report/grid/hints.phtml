@@ -1,0 +1,55 @@
+
+<?php echo $block->getChildHtml('text_block')?>
+
+<script type="text/javascript">
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal'
+        ],
+        function(
+            $,
+            modal
+        ) {
+            var options = {
+                type: 'popup',
+                responsive: true,
+                innerScroll: true,
+                title: $.mage.__('Column Definition'),
+                buttons: [{
+                    text: $.mage.__('Close'),
+                    class: '',
+                    click: function () {
+                        this.closeModal();
+                    }
+                }]
+            };
+            
+            var grid = $('.data-grid');
+            var hints = $('.grid-colomn-hints');
+            var items = hints.find('.item');
+            
+            items.each(function() {
+                var item = $(this);
+                var rel = item.attr('rel');
+                
+                if(rel) {
+                    var _item = grid.find('th.col-' + rel);
+                    
+                    if(_item.size() === 1) {
+                        var span = _item.find('span');
+                        var html = span.html() + '<a href="#" style="color: #fff; text-decoration: underline; margin-left: 10px;"><span>(?)</span></a>';
+                        span.html(html);
+                        
+                        var popup = modal(options, item);
+                        
+                        span.find('a').click(function() {
+                            item.modal('openModal');
+                            return false;
+                        });
+                    }
+                }
+            });
+        }
+    );
+</script>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="toppikreport_settings" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Report</label>
+            <tab>toppik</tab>
+            <resource>Toppik_Report::toppik</resource>
+            <group id="general_options" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="notification_emails" translate="label comment" type="text" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Notification Emails</label>
+                    <comment><![CDATA[Comma-separated emails.]]></comment>
+                    <depends>
+                        <field id="*/*/enabled">1</field>
+                    </depends>
+                </field>
+                <field id="daily_sales_emails" translate="label comment" type="text" sortOrder="45" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Daily Sales Recipients Emails</label>
+                    <comment><![CDATA[Comma-separated emails.]]></comment>
+                    <depends>
+                        <field id="*/*/enabled">1</field>
+                    </depends>
+                </field>
+                <field id="daily_sales_send_daily_email" translate="label comment" type="select" sortOrder="46" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Daily Sales Send Daily Email</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="*/*/enabled">1</field>
+                    </depends>
+                </field>
+                <field id="log" translate="label comment" type="select" sortOrder="50" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable Logging</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="*/*/enabled">1</field>
+                    </depends>
+                </field>
+                <field id="log_file" translate="label comment" type="text" sortOrder="110" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Log File</label>
+                    <depends>
+                        <field id="*/*/enabled">1</field>
+                        <field id="*/*/log">1</field>
+                    </depends>
+                    <validate>validate-no-empty</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

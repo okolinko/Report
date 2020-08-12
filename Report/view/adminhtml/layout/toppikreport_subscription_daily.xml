@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Toppik\Report\Block\Adminhtml\Subscription\Daily" template="Magento_Reports::report/grid/container.phtml" name="toppik.report.grid.container">
+                <block class="Toppik\Report\Block\Adminhtml\Report\Filter\Form\DateRange" name="grid.filter.form">
+                    <action method="addReportTypeOption">
+                        <argument name="key" xsi:type="string">date_range</argument>
+                        <argument translate="true" name="value" xsi:type="string">Date Range</argument>
+                    </action>
+                </block>
+            </block>
+            
+            <block class="\Magento\Framework\View\Element\Template" name="hints" template="Toppik_Report::report/grid/hints.phtml">
+                <block class="Magento\Cms\Block\Block" name="text_block">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">admin_subscription_report_daily</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

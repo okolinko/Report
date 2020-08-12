@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="toppikreport_subscription_future_detail_grid_data_source" xsi:type="string">Toppik\Report\Model\ResourceModel\Report\Subscription\Future\Detail\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    
+    <type name="Toppik\Report\Model\ResourceModel\Report\Subscription\Future\Detail\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">subscription_report_future</argument>
+            <argument name="resourceModel" xsi:type="string">Toppik\Report\Model\ResourceModel\Report\Subscription\Future</argument>
+            <argument name="eventPrefix" xsi:type="string">toppikreport_subscription_future_detail_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">toppikreport_subscription_future_detail_grid_collection</argument>
+        </arguments>
+    </type>
+    
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="toppikreport_subscription_average_detail_grid_data_source" xsi:type="string">Toppik\Report\Model\ResourceModel\Report\Subscription\Average\Detail\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    
+    <type name="Toppik\Report\Model\ResourceModel\Report\Subscription\Average\Detail\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">subscriptions_profiles</argument>
+            <argument name="resourceModel" xsi:type="string">Toppik\Report\Model\ResourceModel\Report\Subscription\Average</argument>
+            <argument name="eventPrefix" xsi:type="string">toppikreport_subscription_average_detail_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">toppikreport_subscription_average_detail_grid_collection</argument>
+        </arguments>
+    </type>
+    
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="toppikreport_subscription_save_grid_data_source" xsi:type="string">Toppik\Report\Model\ResourceModel\Report\Subscription\Save\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    
+    <type name="Toppik\Report\Model\ResourceModel\Report\Subscription\Save\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">subscriptions_save</argument>
+            <argument name="resourceModel" xsi:type="string">Toppik\Subscriptions\Model\ResourceModel\Profile\Save</argument>
+            <argument name="eventPrefix" xsi:type="string">toppikreport_subscription_save_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">toppikreport_subscription_save_grid_collection</argument>
+        </arguments>
+    </type>
+    
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="toppikreport_subscription_save_summary_grid_data_source" xsi:type="string">Toppik\Report\Model\ResourceModel\Report\Subscription\Save\Summary\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    
+    <type name="Toppik\Report\Model\ResourceModel\Report\Subscription\Save\Summary\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">subscriptions_save</argument>
+            <argument name="resourceModel" xsi:type="string">Toppik\Subscriptions\Model\ResourceModel\Profile\Save</argument>
+            <argument name="eventPrefix" xsi:type="string">toppikreport_subscription_save_summary_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">toppikreport_subscription_save_summary_grid_collection</argument>
+        </arguments>
+    </type>
+    
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="toppikreport_subscription_daily_detail_grid_data_source" xsi:type="string">Toppik\Report\Model\ResourceModel\Report\Subscription\Daily\Detail\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    
+    <type name="Toppik\Report\Model\ResourceModel\Report\Subscription\Daily\Detail\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">subscription_report_future</argument>
+            <argument name="resourceModel" xsi:type="string">Toppik\Report\Model\ResourceModel\Report\Subscription\Daily</argument>
+            <argument name="eventPrefix" xsi:type="string">toppikreport_subscription_daily_detail_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">toppikreport_subscription_daily_detail_grid_collection</argument>
+        </arguments>
+    </type>
+    
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="toppikreport_subscription_monthly_detail_grid_data_source" xsi:type="string">Toppik\Report\Model\ResourceModel\Report\Subscription\Monthly\Detail\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    
+    <type name="Toppik\Report\Model\ResourceModel\Report\Subscription\Monthly\Detail\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">sales_order_grid</argument>
+            <argument name="resourceModel" xsi:type="string">Toppik\Report\Model\ResourceModel\Report\Subscription\Monthly</argument>
+            <argument name="eventPrefix" xsi:type="string">toppikreport_subscription_monthly_detail_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">toppikreport_subscription_monthly_detail_grid_collection</argument>
+        </arguments>
+    </type>
+    
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="toppikreport_subscription_index_detail_grid_data_source" xsi:type="string">Toppik\Report\Model\ResourceModel\Report\Subscription\Index\Detail\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    
+    <type name="Toppik\Report\Model\ResourceModel\Report\Subscription\Index\Detail\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">subscriptions_profiles</argument>
+            <argument name="resourceModel" xsi:type="string">Toppik\Report\Model\ResourceModel\Report\Subscription\Index</argument>
+            <argument name="eventPrefix" xsi:type="string">toppikreport_subscription_index_detail_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">toppikreport_subscription_index_detail_grid_collection</argument>
+        </arguments>
+    </type>
+    
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="toppikreport_system_integrations_grid_data_source" xsi:type="string">Toppik\Report\Model\ResourceModel\Report\System\Integrations\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    
+    <type name="Toppik\Report\Model\ResourceModel\Report\System\Integrations\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">toppikreport_daily_system</argument>
+            <argument name="resourceModel" xsi:type="string">Toppik\Report\Model\ResourceModel\Report\System\Integrations</argument>
+            <argument name="eventPrefix" xsi:type="string">system_integrations_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">system_integrations_grid_collection</argument>
+        </arguments>
+    </type>
+    
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="toppikreport_system_integrations_entity_types_grid_data_source" xsi:type="string">Toppik\Report\Model\ResourceModel\Report\System\Integrations\Entity\Types\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    
+    <type name="Toppik\Report\Model\ResourceModel\Report\System\Integrations\Entity\Types\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">toppikreport_daily_system_entity_type</argument>
+            <argument name="resourceModel" xsi:type="string">Toppik\Report\Model\ResourceModel\Report\System\Integrations\Entity\Types</argument>
+            <argument name="eventPrefix" xsi:type="string">system_integrations_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">system_integrations_grid_collection</argument>
+        </arguments>
+    </type>
+    
+</config>
